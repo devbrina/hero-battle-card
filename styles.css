@@ -1,0 +1,73 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+body{
+    background-color: rgba(75, 75, 75, 0.5);
+    background-image: url('https://media.tenor.com/VDL9XDrEcJ0AAAAC/power.gif');
+    background-size: cover;
+}
+body h1 {
+    font-family: Impact, sans-serif, fantasy;
+    font-size: 40pt;
+    text-shadow: -1px -1px 0px #000000, 
+                -1px 1px 0px #000000,                    
+                1px -1px 0px #000000,                  
+                1px 0px 0px #000000;
+}
+body p {
+    background-color: #000000;
+}
+
+/* Estilos básicos para mobile */
+.card {
+    align-items: stretch;
+    background-color: #000000;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 16pt;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 14pt;
+    margin: 0;
+}
+
+/* Estilos para desktop */
+@media (min-width: 600px) {
+    body h1{
+        font-size: 60pt;
+    }
+    body p{
+        font-size: 18pt;
+    }    
+    #cards {
+        width: 90%;
+        display: flex;
+        vertical-align: top;
+    }
+    .card{
+        width: 90%;
+        margin: auto 10px 20px 10px;
+        font-size: 18pt;
+    }
+    .card p {
+        margin: 0;
+    }
+}
